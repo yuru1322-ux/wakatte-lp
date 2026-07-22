@@ -29,8 +29,1891 @@
 
     <!-- Layout -->
     <link rel="stylesheet" href="css/footer.css" />
-    
+
     <script src="js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="inner">
+        <div class="header__logo">
+          <a href="/">
+            <img src="images/common/logo.svg" alt="ワカッテ採用" />
+          </a>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <button class="sp-only hamburger" aria-label="メニュー">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- ナビゲーション -->
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li><a href="#caseStudy">実績</a></li>
+            <li><a href="#features">特徴</a></li>
+            <li><a href="#price">料金</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#contact">資料請求</a></li>
+          </ul>
+          <a href="#contact" class="sp__only cta__button">
+            資料をダウンロードする
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+      <!-- ファーストビュー -->
+      <section class="fv">
+        <div class="inner">
+          <div class="fv__content">
+            <div class="fv__text">
+              <p class="fv__label">中小企業の若手採用に特化</p>
+              <h1 class="fv__title">
+                <span class="fv__title-orange">
+                  若手に <br class="sp-only" />選ばれる
+                </span>
+                <span class="fv__title-bk">中小企業へ</span>
+              </h1>
+              <p class="fv__lead">＼ もう、採用で苦労しない。／</p>
+              <p class="fv__message">採用成果にこだわる</p>
+              <p class="fv__service">SNS採用代行</p>
+            </div>
+            <div class="fv__img">
+              <img src="images/SP/fv_sp_img.svg" alt="指をさすビジネスマン" />
+            </div>
+          </div>
+
+          <!-- sp-only -->
+          <div class="sp-only fv__cta">
+            <img src="images/SP/cta__catch.svg" alt="まずは無料で" />
+            <a href="#contact" class="sp__only cta__button cta__button-orange">
+              資料をダウンロードする
+            </a>
+            <p class="fv__cta-text font-14px">
+              採用SNSの支援内容・料金・事例を<br />
+              まとめた資料をお送りします。
+            </p>
+          </div>
+          
+          <!-- pc-only -->
+          <div class="fv__form-wrapper pc-only">
+            <div class="fv__form-heading">
+              <h2 class="fv__form-title">
+                資料請求フォーム
+              </h2>
+
+              <p class="fv__form-text">
+                採用SNSの支援内容・料金・事例をまとめた資料をお送りします。
+              </p>
+            </div>
+
+            <form
+              class="fv__form"
+              action="https://utage-system.com/r/8nSbmGvxEajh/store"
+              method="post"
+            >
+              <!-- 氏名 -->
+              <div class="fv__form-group">
+                <label class="fv__form-label" for="fv-name">
+                  氏名
+                  <span class="fv__form-required">必須</span>
+                </label>
+
+                <input
+                  class="fv__form-input"
+                  type="text"
+                  id="fv-name"
+                  name="name"
+                  placeholder="例：山田太郎"
+                  required
+                >
+              </div>
+
+              <!-- 会社名 -->
+              <div class="fv__form-group">
+                <label class="fv__form-label" for="fv-company">
+                  会社名
+                  <span class="fv__form-required">必須</span>
+                </label>
+
+                <input
+                  class="fv__form-input"
+                  type="text"
+                  id="fv-company"
+                  name="free12"
+                  placeholder="例：株式会社ワカッテ"
+                  required
+                >
+              </div>
+
+              <!-- メールアドレス -->
+              <div class="fv__form-group">
+                <label class="fv__form-label" for="fv-mail">
+                  メールアドレス
+                  <span class="fv__form-required">必須</span>
+                </label>
+
+                <input
+                  class="fv__form-input"
+                  type="email"
+                  id="fv-mail"
+                  name="mail"
+                  autocomplete="email"
+                  placeholder="例：example@wakatte.co.jp"
+                  required
+                >
+              </div>
+
+              <!-- 電話番号 -->
+              <div class="fv__form-group">
+                <label class="fv__form-label" for="fv-phone">
+                  電話番号
+                  <span class="fv__form-required">必須</span>
+                </label>
+
+                <input
+                  class="fv__form-input"
+                  type="tel"
+                  id="fv-phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="例：00-0000-0000"
+                  required
+                >
+              </div>
+
+              <!-- 都道府県 -->
+              <div class="fv__form-group">
+                <label class="fv__form-label" for="fv-pref">
+                  都道府県
+                  <span class="fv__form-required">必須</span>
+                </label>
+
+                <input
+                  class="fv__form-input"
+                  type="text"
+                  id="fv-pref"
+                  name="pref"
+                  placeholder="例：大阪府"
+                  required
+                >
+              </div>
+
+              <p class="fv__form-privacy">
+                <a
+                  class="fv__form-privacy-link"
+                  href="https://wakatte.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  プライバシーポリシー
+                </a>
+                をお読みの上、同意して送信してください。
+              </p>
+
+              <button
+                class="cta__button cta__button-orange fv__form-button"
+                type="submit"
+              >
+                資料をダウンロードする
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ケーススタディ -->
+      <section id="caseStudy" class="case-study">
+        <div class="inner">
+          <div class="case-study__heading section-heading">
+            <img
+              src="images/common/logo.svg"
+              alt="ワカッテ採用"
+              class="case-study__logo"
+            />
+            <h2 class="case-study__title">の支援実績</h2>
+          </div>
+          <p class="case-study__text font-15px">
+            求人媒体だけでは届きにくい若手層へ<br class="sp-only" />
+            SNSを活用して認知から<br />
+            応募・採用までつなげています
+          </p>
+
+          <!-- ケーススタディカード -->
+          <div class="case-study__cards">
+            <article class="case-study__card">
+              <p class="case-study__tag">放課後デイ</p>
+              <div class="case-study__card-body">
+                <p class="case-study__result">
+                  <span class="font-36px">1</span>カ月で<br>
+                  <span class="font-36px">19</span>応募・
+                  <div class="cl-orange"><span class="font-36px">6</span>名採用</div>
+                </p>
+                <div class="case-study__image">
+                  <img
+                    src="images/common/case01.png"
+                    alt="放課後デイの採用支援事例"/>
+                </div>
+                <p class="case-study__text font-16px">
+                  福岡市内の保育士・教員免許をお持ちの方をターゲットに、早出なしと・残業０の働きやすさを訴求しました。
+                </p>
+              </div>
+            </article>
+            <article class="case-study__card">
+              <p class="case-study__tag">焼肉店</p>
+              <div class="case-study__card-body">
+                <p class="case-study__result font-24px">
+                  若手応募単価<br>
+                  <span class="font-36px">20</span>万円超 →
+                  <div class="cl-orange"><span class="font-36px">3</span>万円未満</div>
+                </p>
+                <div class="case-study__image">
+                  <img
+                    src="images/common/case02.png"
+                    alt="焼肉店の採用支援事例"/>
+                </div>
+                <p class="case-study__text font-16px">
+                  年功序列やあいまいな評価制度に不満を持っている方をターゲットに、若手でも活躍できる焼肉店であることを訴求しました。
+                </p>
+              </div>
+            </article>
+            <article class="case-study__card">
+              <p class="case-study__tag">ネイリスト採用</p>
+              <div class="case-study__card-body">
+                <p class="case-study__result font-24px">
+                  <span class="font-36px">1</span>カ月で<br>
+                  <span class="font-36px">36</span>応募・
+                  <div class="cl-orange"><span class="font-36px">3</span>名採用</div>
+                </p>
+                <div class="case-study__image">
+                  <img
+                    src="images/SP/case-study03.png"
+                    alt="ネイリストの採用支援事例"/>
+                </div>
+                <p class="case-study__text font-16px">
+                  接客が苦手なネイリストの方をターゲットに、接客不要・土日祝休みで働けるネイルチップ制作の仕事であることを訴求しました。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- お悩み -->
+      <section class="problems">
+        <div class="inner">
+          <div class="problems__visual">
+              <h2 class="problems__title">
+              こんな<span>お悩み</span>ありませんか？
+              </h2>
+              <div class="problems__item problems__item-1">
+                    <p class="problems__item-text font-16px">
+                    求人媒体に出しても
+                    <span class="cl-blue">20代若手の応募が来ない…</span>
+                    <br>採用費だけが増えていく
+                    </p>
+              </div>
+              <div class="problems__item problems__item-2">
+                    <p class="problems__item-text font-16px">
+                    応募は来るけど、
+                    <span class="cl-blue">20代若手の採用につながらない…</span>
+                    <br>面接しても決まらない
+                    </p>
+              </div>
+              <div class="problems__item problems__item-3">
+                    <p class="problems__item-text font-16px">
+                    選考は進むのに
+                    <span class="cl-blue">面接辞退・内定辞退が多い…</span>
+                    <br>会社の魅力が伝わっていない
+                    </p>
+              </div>
+              <div class="problems__img">
+                <img
+                src="images/common/problem__image.png"
+                alt="採用について悩んでいる男女"/>
+              </div>
+                <p class="problems__text font-16px">
+                多くの中小企業が<br />
+                若手採用に行き詰まっています
+                </p>
+            </div>
+        </div>
+      </section> 
+
+      <!--中小企業の魅力 強み -->
+      <section class="strengths">
+        <div class="inner">
+            <h2 class="strengths__title">
+              <span class="cl-orange">中小企業の魅力</span>は<br />
+              <span class="under-line">求人票だけでは<br />伝わりきりません</span>
+            </h2>
+            <p class="strengths__text">
+              若手採用では、給与・休日・福利厚生・<br />
+              会社の知名度など条件面で比較されやすくなります
+              <br /><br />
+              その結果、大手企業や有名企業と比べられ<br />
+              応募候補から外れてしまうことも少なくありません
+            </p>
+              <img src="images/common/reason__arrow.svg" alt="理由の矢印">
+              <div class="strengths__message">
+                <p class="font-16px">
+                  だからこそ、<span class="cl-blue font-20px">中小企業の若手採用</span>では
+                  <br><div class="font-20px">会社の<span class="cl-orange font-24px">リアルな魅力</span>を届けることが重要です</div>
+                </p>
+              </div>
+              <div class="strengths__cards">
+                <!-- 求人サイトだけの場合 -->
+                <article class="strengths__card strengths__card-1">
+                  <h3 class="strengths__card-label">求人サイトだけの場合</h3>
+                  <div class="strengths__card-img">
+                    <img
+                      src="images/common/strength1.png"
+                      alt="求人サイトで条件を比較している様子"
+                    />
+                  </div>
+                  <ul class="strengths__card-list">
+                    <li class="strengths__card-item list-x">
+                      条件で比較されやすい
+                    </li>
+                    <li class="strengths__card-item list-x">
+                      知名度で判断されやすい
+                    </li>
+                    <li class="strengths__card-item list-x">
+                      大手企業が有利になりやすい
+                    </li>
+                    <li class="strengths__card-item list-x">
+                      入社後のイメージを持ちにくい
+                    </li>
+                  </ul>
+                </article>
+
+                <!-- SNS採用を活用した場合 -->
+                <article class="strengths__card strengths__card-2">
+                  <h3 class="strengths__card-label">SNS採用を活用した場合</h3>
+                  <div class="strengths__card-img">
+                    <img
+                      src="images/common/strength2.png"
+                      alt="SNSで会社の雰囲気を発信している様子"
+                    />
+                  </div>
+                  <ul class="strengths__card-list">
+                    <li class="strengths__card-item list-v">
+                      動画で会社の雰囲気が伝わる
+                    </li>
+                    <li class="strengths__card-item list-v">
+                      社員や社長の人柄が見える
+                    </li>
+                    <li class="strengths__card-item list-v">
+                      仕事のやりがいが伝わる
+                    </li>
+                    <li class="strengths__card-item list-v">
+                      入社後のイメージを持ってもらいやすい
+                    </li>
+                  </ul>
+                </article>
+              </div>
+              <p>ワカッテ採用は、TikTok・Instagram・公式LINE・
+              <br>SNS広告を活用し認知・応募・
+              <br>面接・採用につながる発信を支援します</p>              
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="inner">
+          <div class="cta__content">
+            <h2 class="cta__title">
+              若手に選ばれる採用導線を<br class="sp-only">
+              つくりたい企業様へ
+            </h2>
+
+            <p class="cta__text">
+              求人票だけでは伝わらない貴社の魅力を<br class="sp-only">
+              SNSで届け応募・面接・採用につなげます
+            </p>
+
+            <div class="cta__buttons">
+              <a href="https://utage-system.com/p/bMXa3SRMA58C" class="cta__button cta__button-white">
+                今すぐ無料で相談してみる
+              </a>
+
+              <a href="#contact" class="cta__button cta__button-orange">
+                まずは資料をダウンロードする
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Features -->
+      <section id="features">
+        <div class="inner">
+          <div class="features__heading">
+            <p class="features__sub-title">
+              ＼中小企業向けSNS採用代行／
+            </p>
+              <img
+              src="images/common/logo.svg"
+              alt="ワカッテ採用"
+              class="case-study__logo"
+              />
+            <h2 class="features__title">
+              の<span class="under-line">3つの特徴</span>
+            </h2>
+
+            <p class="features__text">
+              ワカッテ採用は若手を<br>
+              応募・面接・採用までつなげるSNS採用支援です
+            </p>
+          </div>
+
+          <div class="features__cards">
+
+            <article class="features__card">
+              <img src="images/common/Point.01.png" 
+              alt="Point01" class="features__card-point" 
+              />
+              <h3 class="features__card-title">
+                <span class="cl-blue font-20px">採用成果にこだわる</span><br>
+                SNS運用改善
+              </h3>
+
+              <div class="features__image">
+                <img src="images/common/feature01.png" alt="手を握り合うビジネスマンふたり">
+              </div>
+
+              <ul class="features__list">
+                <li class="features__item">
+                  再生数・フォロワー数だけを<span class="cl-orange">追いません</span>
+                </li>
+                <li class="features__item">
+                  採用数を最終目的にした<span class="cl-orange">SNS支援</span>
+                </li>
+                <li class="features__item">
+                  応募後のフローまで<span class="cl-orange">徹底支援</span>
+                </li>
+                <li class="features__item">
+                  入社後活躍を見据えた<span class="cl-orange">ターゲット設計</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="features__card">
+              <img
+                src="images/common/Point.02.png"
+                alt="Point02"
+                class="features__card-point"
+              />
+
+              <h3 class="features__card-title">
+                <span class="cl-blue font-20px">採用担当者の負担を抑える</span><br>
+                月5時間目安で運用
+              </h3>
+
+              <div class="features__image">
+                <img
+                  src="images/common/feature02.png"
+                  alt="採用に関わるさまざまな職種の人たち"
+                />
+              </div>
+
+              <ul class="features__list">
+                <li class="features__item">
+                  企画・台本・撮影・編集・投稿・分析まで
+                  <span class="cl-orange">代行</span>
+                </li>
+                <li class="features__item">
+                  月1回の打ち合わせと、
+                  <span class="cl-orange">撮影・確認作業のみ</span>
+                </li>
+                <li class="features__item">
+                  社内でSNS担当者を
+                  <span class="cl-orange">育てる必要なし</span>
+                </li>
+                <li class="features__item">
+                  忙しい人事・経営者でも
+                  <span class="cl-orange">正しい運用が可能</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="features__card">
+              <img
+                src="images/common/Point.03.png"
+                alt="Point03"
+                class="features__card-point"
+              />
+
+              <h3 class="features__card-title">
+                <span class="cl-blue font-20px">届けて、応募後も逃さない</span><br>
+                LINE・広告運用
+              </h3>
+
+              <div class="features__image">
+                <img
+                  src="images/common/feature03.png"
+                  alt="パソコンを見ながら採用について話す男女"
+                />
+              </div>
+
+              <ul class="features__list">
+                <li class="features__item">
+                  SNS広告で
+                  <span class="cl-orange">採用ターゲットに届ける</span>
+                </li>
+                <li class="features__item">
+                  公式LINEで
+                  <span class="cl-orange">応募前後をフォロー</span>
+                </li>
+                <li class="features__item">
+                  面接前リマインドで
+                  <span class="cl-orange">辞退を防止</span>
+                </li>
+                <li class="features__item">
+                  応募から採用まで
+                  <span class="cl-orange">導線を改善</span>
+                </li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+      <!-- 運用代行との違い　STEP -->
+      <section class="steps">
+        <div class="inner">
+          <div class="steps__heading">
+            <p class="steps__sub-title">一般的な採用SNS</p>
+
+            <h2 class="steps__title">
+              <span class="cl-orange">運用代行との違い</span>
+            </h2>
+
+            <p class="steps__lead">
+              <span class="under-line">ワカッテ採用は、「SNS運用代行」ではなく<br class="sp-only">
+              「SNS採用代行」です</span>
+            </p>
+          </div>
+
+          <div class="steps__body">
+            <!-- ワカッテ採用の帯 -->
+            <div class="steps__blue">
+              <p class="steps__blue-title">ワカッテ採用</p>
+              <p class="steps__blue-text">
+                認知から採用まで一貫して支援
+              </p>
+            </div>
+
+            <!-- 一般的なSNS運用代行の帯 -->
+            <div class="steps__gray">
+              <p class="steps__gray-text">
+                一般的な採用SNS運用代行はここまで
+              </p>
+            </div>
+
+            <!-- ステップカード -->
+            <div class="steps__items">
+              <article class="steps__item steps__item-gray">
+                <p class="steps__item-number">01</p>
+
+                <h3 class="steps__item-title">認知を広げる</h3>
+
+                <div class="steps__item-image">
+                  <img
+                    src="images/common/steps_icon01.png"
+                    alt="拡声器のイラスト"
+                  />
+                </div>
+
+                <p class="steps__item-text">
+                  TikTok・Instagram・<br>
+                  SNS広告で<span class="cl-orange">若手に届ける</span>
+                </p>
+              </article>
+
+              <article class="steps__item steps__item-gray">
+                <p class="steps__item-number">02</p>
+
+                <h3 class="steps__item-title">興味・理解を深める</h3>
+
+                <div class="steps__item-image">
+                  <img
+                    src="images/common/steps_icon02.png"
+                    alt="スマートフォンとハートのイラスト"
+                  />
+                </div>
+
+                <p class="steps__item-text">
+                  会社の雰囲気や<br>
+                  <span class="cl-orange">魅力を伝える</span>
+                </p>
+              </article>
+
+              <article class="steps__item steps__item-blue">
+                <p class="steps__item-number">03</p>
+
+                <h3 class="steps__item-title">応募につなげる</h3>
+
+                <div class="steps__item-image">
+                  <img
+                    src="images/common/steps_icon03.png"
+                    alt="メッセージ画面のイラスト"
+                  />
+                </div>
+
+                <p class="steps__item-text">
+                  公式LINEで応募しやすい<br>
+                  <span class="cl-orange">導線を整える</span>
+                </p>
+              </article>
+
+              <article class="steps__item steps__item-blue">
+                <p class="steps__item-number">04</p>
+
+                <h3 class="steps__item-title">面接辞退を防ぐ</h3>
+
+                <div class="steps__item-image">
+                  <img
+                    src="images/common/steps_icon04.png"
+                    alt="吹き出しのイラスト"
+                  />
+                </div>
+
+                <p class="steps__item-text">
+                  応募後フォローで<br>
+                  <span class="cl-orange">離脱を減らす</span>
+                </p>
+              </article>
+
+              <article class="steps__item steps__item-blue">
+                <p class="steps__item-number">05</p>
+
+                <h3 class="steps__item-title">採用につなげる</h3>
+
+                <div class="steps__item-image">
+                  <img
+                    src="images/common/steps_icon05.png"
+                    alt="握手とグラフのイラスト"
+                  />
+                </div>
+
+                <p class="steps__item-text">
+                  面接・採用まで見ながら<br>
+                  <span class="cl-orange">改善する</span>
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <p class="steps__note">
+            ※広告運用・公式LINE・応募後フォローは<br class="sp-only">
+            プランにより対応範囲が異なります。
+          </p>
+        </div>
+      </section>
+
+      <!-- 導入後の運用イメージ -->
+      <section class="operation">
+        <div class="inner">
+          <div class="operation__heading">
+            <h2 class="operation__title">
+              導入後の運用イメージ
+            </h2>
+
+            <p class="operation__text">
+              初期設計から運用・改善まで<br>
+              月ごとの進行と貴社のご負担イメージを<br class="sp-only">
+              ご紹介します
+            </p>
+          </div>
+
+          <div class="operation__cards">
+            <!-- 1か月目 -->
+            <article class="operation__card">
+              <h3 class="operation__card-month">1か月目</h3>
+
+              <div class="operation__card-item">
+                <p class="operation__card-item-label">
+                  <span class="cl-blue font-20px">ワカッテ採用</span>が対応すること
+                </p>
+
+                <ul class="operation__card-item-list">
+                  <li>
+                    初期戦略の設計
+                  </li>
+                  <li>
+                    競合調査・現状分析
+                  </li>
+                  <li>
+                    採用担当者・社員インタビュー
+                  </li>
+                  <li>
+                    投稿企画・台本作成
+                  </li>
+                  <li>
+                    アカウント作成・初回撮影
+                  </li>
+                  <li>
+                    動画編集の開始
+                  </li>
+                </ul>
+              </div>
+
+              <div class="operation__card-item-box">
+                <p>
+                  <span class="cl-orange font-20px">貴社</span>にご対応いただくこと
+                </p>
+
+                <p class="operation__time">
+                  工数：10〜15時間
+                </p>
+
+                <ul class="operation__box-list">
+                  <li>
+                    インタビュー協力
+                  </li>
+                  <li>
+                    出演者選定
+                  </li>
+                  <li>
+                    日程調整
+                  </li>
+                  <li>
+                    企画・台本・動画確認
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+<!-- 2か月目 -->
+            <article class="operation__card">
+              <h3 class="operation__card-month">2か月目</h3>
+
+              <div class="operation__card-item">
+                <p class="operation__card-item-label">
+                  <span class="cl-blue font-20px">ワカッテ採用</span>が対応すること
+                </p>
+
+                <ul class="operation__card-item-list">
+                  <li>投稿開始</li>
+                  <li>追加投稿企画の作成</li>
+                  <li>公式LINE運用の構築</li>
+                  <li>追加撮影の実施</li>
+                  <li>動画編集・修正</li>
+                  <li>数値確認・改善準備</li>
+                </ul>
+              </div>
+
+              <div class="operation__card-item-box">
+                <p>
+                  <span class="cl-orange font-20px">貴社</span>にご対応いただくこと
+                </p>
+
+                <p class="operation__time">
+                  工数：10〜15時間
+                </p>
+
+                <ul class="operation__box-list">
+                  <li>撮影協力</li>
+                  <li>企画・台本・動画確認</li>
+                  <li>定例打ち合わせ参加</li>
+                </ul>
+              </div>
+            </article>
+
+<!-- 3か月目以降 -->
+            <article class="operation__card">
+              <h3 class="operation__card-month">3か月目〜</h3>
+
+              <div class="operation__card-item">
+                <p class="operation__card-item-label">
+                  <span class="cl-blue font-20px">ワカッテ採用</span>が対応すること
+                </p>
+
+                <ul class="operation__card-item-list">
+                  <li>月次レポート作成</li>
+                  <li>投稿企画・台本作成</li>
+                  <li>撮影・編集・投稿管理</li>
+                  <li>公式LINEでの応募者対応・候補者管理</li>
+                  <li>SNS広告運用</li>
+                  <li>数値分析・改善提案</li>
+                </ul>
+              </div>
+
+              <div class="operation__card-item-box">
+                <p>
+                  <span class="cl-orange font-20px">貴社</span>にご対応いただくこと
+                </p>
+
+                <p class="operation__time">
+                  工数：5〜7時間
+                </p>
+
+                <ul class="operation__box-list">
+                  <li>月1回の打ち合わせ</li>
+                  <li>撮影協力</li>
+                  <li>企画・台本・動画確認</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+            <!-- CTA -->
+      <section class="cta">
+        <div class="inner">
+          <div class="cta__content">
+            <h2 class="cta__title">
+              SNSから応募・面接・採用まで<br class="sp-only">
+              つなげたい企業様へ
+            </h2>
+
+            <p class="cta__text">
+              貴社の採用課題に合わせて<br>
+              SNS・広告・公式LINEを活用した<br class="sp-only">
+              採用導線をご提案します
+            </p>
+
+            <div class="cta__buttons">
+              <a href="https://utage-system.com/p/bMXa3SRMA58C" class="cta__button cta__button-white">
+                今すぐ無料で相談してみる
+              </a>
+
+              <a href="#contact" class="cta__button cta__button-orange">
+                まずは資料をダウンロードする
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>      
+      <!-- Price -->
+      <section class="price" id="price">
+        <div class="inner">
+          <div class="price__heading">
+            <h2 class="section-heading price__title">
+              料金・プラン比較表
+            </h2>
+
+            <p class="price__text">
+              採用課題・ご希望の支援範囲に合わせて<br>
+              最適なプランをご提案します
+            </p>
+          </div>
+
+          <div class="price__table-wrapper">
+            <table class="price__table">
+              <thead>
+                <tr>
+                  <th class="price__blank"></th>
+
+                  <th class="price__plan">
+                    SNS運用<br class="sp-only">
+                    代行プラン
+                  </th>
+
+                  <th class="price__plan">
+                    広告運用<br class="sp-only">
+                    プラン
+                  </th>
+
+                  <th class="price__plan price__plan-orange">
+                    採用獲得<br class="sp-only">
+                    支援プラン
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th class="price__category">
+                    月額費用
+                  </th>
+
+                  <td class="price__cell price__cell--amount">
+                    <p class="price__amount">
+                      <span class="font-24px">25</span>万円
+                    </p>
+                    <p class="price__amount-note">
+                      撮影交通費込み
+                    </p>
+                  </td>
+
+                  <td class="price__cell price__cell--amount">
+                    <p class="price__amount">
+                      <span class="font-24px">32</span>万円
+                    </p>
+                    <p class="price__amount-note">
+                      広告費込み<br>
+                      撮影交通費込み
+                    </p>
+                  </td>
+
+                  <td class="price__cell price__cell--amount">
+                    <p class="price__amount">
+                      <span class="font-24px">35</span>万円
+                    </p>
+                    <p class="price__amount-note">
+                      広告費込み<br>
+                      撮影交通費込み
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="td-orange">
+                  <th class="price__category font-bold">
+                    おすすめ<br>
+                    企業
+                  </th>
+
+                  <td class="price__cell price__cell--company">
+                    <strong>採用SNSを</strong><br>
+                    伸ばしたい企業
+                  </td>
+
+                  <td class="price__cell price__cell--company">
+                    若手への<strong>認知を</strong><br>
+                    高めたい企業
+                  </td>
+
+                  <td class="price__cell price__cell--company">
+                    <strong>採用獲得まで</strong><br>
+                    任せたい企業
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="price__category">
+                    初期戦略<br class="sp-only">
+                    設計
+                  </th>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle price__circle-orange" aria-label="対応あり"></span>
+                  </td>
+                </tr>
+
+                <tr class="td-orange">
+                  <th class="price__category">
+                    企画・<br class="sp-only">
+                    台本作成
+                  </th>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle price__circle-orange" aria-label="対応あり"></span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="price__category">
+                    撮影・編集<br>
+                    ・投稿代行
+                  </th>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle price__circle-orange" aria-label="対応あり"></span>
+                  </td>
+                </tr>
+
+                <tr class="td-orange">
+                  <th class="price__category">
+                    分析・改善
+                  </th>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle price__circle-orange" aria-label="対応あり"></span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="price__category">
+                    SNS<br class="sp-only">
+                    広告運用
+                  </th>
+
+                  <td class="price__cell">
+                    <span class="price__dash">ー</span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle" aria-label="対応あり"></span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle price__circle-orange" aria-label="対応あり"></span>
+                  </td>
+                </tr>
+
+                <tr class="td-orange">
+                  <th class="price__category">
+                    公式LINE<br class="sp-only">
+                    運用
+                  </th>
+
+                  <td class="price__cell">
+                    <span class="price__dash">ー</span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__dash">ー</span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle price__circle-orange" aria-label="対応あり"></span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="price__category">
+                    採用獲得<br class="sp-only">
+                    代行
+                  </th>
+
+                  <td class="price__cell">
+                    <span class="price__dash">ー</span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__dash">ー</span>
+                  </td>
+
+                  <td class="price__cell">
+                    <span class="price__circle price__circle-orange" aria-label="対応あり"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="price__notes">
+            <p>※料金は税別です。</p>
+            <p>※初期費用15万円が別途かかります。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 　流れ　flow -->
+      <section class="flow">
+        <div class="inner">
+          <div class="flow__heading">
+            <h2 class="section-heading flow__title">
+              ご利用の流れ
+            </h2>
+          </div>
+
+          <div class="flow__items">
+            <!-- step 01 -->
+            <article class="flow__item">
+              <div class="flow__number">
+                <span>step</span>
+                <strong>01</strong>
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__item-title">
+                  お問い合わせ
+                </h3>
+
+                <div class="flow__item-text">
+                  <p>
+                    まずはお問い合わせよりご相談ください。
+                  </p>
+
+                  <p>
+                    その後、
+                    <span class="cl-orange">Web会議にてヒアリング</span>
+                    させていただき、最適な採用SNS運用をご提案します。
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- step 02 -->
+            <article class="flow__item">
+              <div class="flow__number">
+                <span>step</span>
+                <strong>02</strong>
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__item-title">
+                  お申し込み
+                </h3>
+
+                <div class="flow__item-text">
+                  <p>
+                    本サービスの契約書を送付します。
+                  </p>
+
+                  <p>
+                    ご契約後は
+                    <span class="cl-orange">
+                      社員インタビューや緻密なターゲット設定を実施
+                    </span>
+                    することで、貴社の強み理解や、求める人物像の明確化を行います。
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- step 03 -->
+            <article class="flow__item">
+              <div class="flow__number">
+                <span>step</span>
+                <strong>03</strong>
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__item-title">
+                  戦略設計・コンセプト作成
+                </h3>
+
+                <div class="flow__item-text">
+                  <p>
+                    <span class="cl-orange">
+                      理想の求職者像や貴社の特長などを整理
+                    </span>
+                    し、推すべき強みや企画内容など、戦略設計とコンセプトメイクを行います。
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- step 04 -->
+            <article class="flow__item">
+              <div class="flow__number">
+                <span>step</span>
+                <strong>04</strong>
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__item-title">
+                  施策の実行・数値データの分析
+                </h3>
+
+                <div class="flow__item-text">
+                  <p>
+                    弊社の運用メソッドに基づいて施策を実行します。
+                  </p>
+
+                  <p>
+                    また
+                    <span class="cl-orange">
+                      毎月数値データをもとに、最適な施策を打ち続けます。
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- step 05 -->
+            <article class="flow__item">
+              <div class="flow__number">
+                <span>step</span>
+                <strong>05</strong>
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__item-title">
+                  レポーティング・改善提案
+                </h3>
+
+                <div class="flow__item-text">
+                  <p>
+                    <span class="cl-orange">
+                      月に1回Web会議にて、運用成果の振り返りと次月の運用方針を共有
+                    </span>
+                    します。
+                  </p>
+
+                  <p>
+                    適切な仮説・実行を行える仕組みを整えていきます。
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- コンタクト -->
+      <section class="contact" id="contact">
+        <div class="inner">
+
+          <div class="contact__box">
+            <div class="contact__heading">
+            <h2 class="contact__title">
+              資料請求フォーム
+            </h2>
+
+            <p class="contact__text">
+              採用SNSの支援内容・料金・事例をまとめた資料をお送りします。
+            </p>
+            </div>
+
+          <form
+            class="contact__form"
+            action="https://utage-system.com/r/8nSbmGvxEajh/store"
+            method="post"
+          >
+
+        <!-- 氏名 -->
+      <div class="contact__group">
+        <label class="contact__label" for="name">
+          氏名
+          <span class="contact__required">必須</span>
+        </label>
+
+        <input
+          class="contact__input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="例：山田太郎"
+          required>
+      </div>
+
+      <!-- 会社名 -->
+      <div class="contact__group">
+        <label class="contact__label" for="free12">
+          会社名
+          <span class="contact__required">必須</span>
+        </label>
+
+        <input
+          class="contact__input"
+          type="text"
+          id="free12"
+          name="free12"
+          placeholder="例：株式会社ワカッテ"
+          required
+        >
+      </div>
+
+      <!-- メールアドレス -->
+      <div class="contact__group">
+        <label class="contact__label" for="mail">
+          メールアドレス
+          <span class="contact__required">必須</span>
+        </label>
+
+        <input
+          class="contact__input"
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="例：example@wakatte.co.jp"
+          required
+        >
+      </div>
+
+      <!-- 電話番号 -->
+      <div class="contact__group">
+        <label class="contact__label" for="phone">
+          電話番号
+          <span class="contact__required">必須</span>
+        </label>
+
+        <input
+          class="contact__input"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="例：00-0000-0000"
+          required
+        >
+      </div>
+
+      <!-- 都道府県 -->
+      <div class="contact__group">
+        <label class="contact__label" for="pref">
+          都道府県
+          <span class="contact__required">必須</span>
+        </label>
+
+        <input
+          class="contact__input"
+          type="text"
+          id="pref"
+          name="pref"
+          placeholder="例：大阪府"
+          required
+        >
+      </div>
+
+      <!-- お問い合わせ内容 -->
+      <div class="contact__group">
+        <label class="contact__label" for="inquiry">
+          お問い合わせ内容
+        </label>
+
+        <textarea
+          class="contact__textarea"
+          id="inquiry"
+          name="inquiry"
+          rows="8"
+          placeholder="ご質問があればご記入ください"
+        ></textarea>
+      </div>
+
+              <p class="contact__note">
+                <a href="https://wakatte.com/privacy" 
+                class="contact__privacy"
+                target="_blank"
+                rel="noopener noreferrer">
+                  プライバシーポリシー
+                </a>
+                をお読みの上、<br class="sp-br">
+                同意して送信してください。
+              </p>
+            <button class="cta__button cta__button-orange" type="submit">
+              資料をダウンロードする
+            </button>
+          </form>
+          </div>
+        </div>
+      </section>
+      
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <div class="inner">
+
+          <div class="faq__heading">
+            <h2 class="section-heading faq__title">
+              よくある質問
+            </h2>
+
+            <p class="faq__text">
+              ワカッテ採用の料金、支援内容、契約期間、<br class="sp-br">
+              導入前によくいただく質問をまとめました
+            </p>
+          </div>
+
+          <div class="faq__list">
+
+            <!-- FAQ 01 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  ワカッテ採用はSNS運用代行と何が違いますか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    一般的なSNS運用代行は、投稿企画・撮影・編集・投稿など、
+                    アカウント運用が中心ですが、
+                    <strong>
+                      ワカッテ採用は、SNSを活用して若手応募・面接・採用につなげる
+                      SNS採用代行
+                    </strong>
+                    です。
+                  </p>
+
+                  <p>
+                    採用ターゲット設計・魅力発掘、SNS広告、公式LINE、
+                    面接前後のフォローまで支援する点が違います。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 02 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  ワカッテ採用では何を支援してもらえますか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    <strong>採用SNSの戦略立案、社員インタビュー、Webリサーチ、
+                    投稿企画、台本作成、撮影、動画編集、投稿、
+                    SNS広告運用、公式LINE導線設計、面接前後のフォロー、
+                    月次レポート、改善提案
+                    </strong>
+                    まで支援します。
+                  </p>
+                  <p>
+                  貴社の主な負担は、指定作業と撮影への協力です。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 03 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  ワカッテ採用の料金はいくらですか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                    <p>
+                      ワカッテ採用の料金は、
+                      <strong>
+                      SNS運用代行が月額25万円、
+                      広告運用込みが月額32万円、
+                      採用戦略支援が月額35万円
+                      </strong>
+                      です。
+                    </p>
+
+                    <p>
+                      料金は税別で、初期費用15万円が別途かかります。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 04 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  最低契約期間はありますか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    <strong>
+                    最低契約期間は6か月
+                    </strong>
+                    です。
+                  </p>
+
+                  <p>
+                    採用SNSは投稿データや反応を蓄積しながら改善していく施策のため、
+                    一定期間の運用を前提としています。
+                  <br>
+                    その後は6か月更新での運用となります。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 05 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  どんな企業に向いていますか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    ワカッテ採用は、
+                      <strong>
+                      若手採用に課題がある中小企業と相性が良いサービス
+                      </strong>
+                      です。
+                  <br>
+                    特に、
+                    <strong>
+                      従業員数50〜300名程度、または新卒3名以上を通年で採用している企業様
+                    </strong>
+                    に向いています。
+                  </p>
+
+                  <p>
+                    製造、建設、運送、介護・福祉、飲食、小売、警備、美容、保育・教育など、
+                    現場の仕事や社員を動画で伝えやすい業界と相性があります。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 06 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  向いていない企業はありますか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    <strong>
+                    短期間で大量採用だけを目的にしている企業、
+                    社内で撮影や確認への協力が難しい企業、
+                    SNSで仕事や職場の魅力を発信しにくい職種
+                    </strong>
+                    では、
+                    相性が悪い場合があります。
+                  </p>
+
+                  <p>
+                    コンサルティング業、事務職、派遣・短期バイト、
+                    経験者採用のみ、ハイクラス管理職採用のみの場合は、
+                    個別に適性を確認させていただきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 07 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  採用を保証していますか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    <strong>採用決定を保証するものではありません。</strong>
+                  <br>
+                    採用成果は、業種、地域、求人条件、選考対応、
+                    採用基準などによって変わります。
+                  </p>
+
+                  <p>
+                    ワカッテ採用では、
+                    採用ターゲットに情報を届け、
+                    応募・面接につながる導線を改善する支援を行います。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 08 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  自社側では毎月どんな作業が必要ですか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    主にお願いする作業は、
+                    <strong>
+                    企画・台本・動画の確認、
+                    撮影日程の調整、
+                    撮影への参加、
+                    報告ミーティングへの参加
+                    </strong>
+                    です。
+                  </p>
+
+                  <p>
+                    投稿企画、台本作成、撮影、編集、投稿、
+                    広告運用、公式LINE導線設計、
+                    改善提案はワカッテ採用側で支援します。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 09 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  公式LINEやSNS広告は必須ですか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    <strong>
+                    必須ではありません。
+                    </strong>
+                  <br>
+                    公式LINEなしの運用や、
+                    SNS広告を使わない運用も可能です。
+                  </p>
+
+                  <p>
+                    ただし、SNS投稿だけでは応募につながりにくい場合があるため、
+                    若手への認知拡大にはSNS広告、
+                    応募前後のフォローや面談辞退対策には
+                    公式LINEの活用が有効です。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 10 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  どれくらいで成果が出ますか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <strong>
+                    業種、地域、採用ターゲット、
+                    投稿本数、広告費、求人条件によって異なります。
+                  </strong>
+
+                  <p>
+                    採用SNSは短期間で完了する施策ではなく、
+                    投稿データや反応を蓄積しながら改善していく施策です。
+                    <br>
+                    ワカッテ採用では、
+                    初応募までの平均は11投稿程度です。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 11 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  出演者が自社内にいない場合はどうすればいいですか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    社員の顔出しが難しい場合でも、
+                    <strong>
+                    手元作業、職場風景、設備、
+                    仕事の流れ、ナレーション、
+                    テキスト演出などを活用して発信
+                    </strong>
+                    できます。
+                  </p>
+
+                  <p>
+                    ただし、採用SNSでは実際に働く人や職場の雰囲気が伝わるほど
+                    応募につながりやすいため、
+                    可能な範囲で出演者を選定することをおすすめしています。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 12 -->
+            <div class="faq__item">
+              <button
+                class="faq__question"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="faq__question-mark">Q</span>
+
+                <span class="faq__question-text">
+                  追加費用は必要ですか？
+                </span>
+
+                <span class="faq__icon"></span>
+              </button>
+
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>
+                    <strong>基本の支援範囲はプラン料金に含まれます。</strong>
+                    <br>
+                    ただし、広告配信費を増やす場合、
+                    遠方撮影で交通費・宿泊費が発生する場合、
+                    契約範囲外の追加制作や追加撮影を行う場合は、
+                    別途費用が発生することがあります。
+                  </p>
+
+                  <p>
+                    必要な費用は事前に確認したうえでご提案します。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+            <!-- CTA -->
+      <section class="cta">
+        <div class="inner">
+          <div class="cta__content">
+            <h2 class="cta__title">
+              若手採用に悩んでいる企業様へ
+            </h2>
+
+            <p class="cta__text">
+              まずは無料相談で、貴社の採用課題や<br class="sp-only">
+              SNS活用の進め方を整理しませんか？
+            </p>
+
+            <div class="cta__buttons">
+              <a href="https://utage-system.com/p/bMXa3SRMA58C" class="cta__button cta__button-white">
+                今すぐ無料で相談してみる
+              </a>
+
+              <a href="#contact" class="cta__button cta__button-orange">
+                まずは資料をダウンロードする
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+        </main>
+      <footer class="footer">
+        <div class="inner">
+
+          <nav class="footer__nav">
+            <a
+              class="footer__link"
+              href="https://wakatte.com/company"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              会社概要
+            </a>
+
+            <a
+              class="footer__link"
+              href="https://wakatte.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              プライバシーポリシー
+            </a>
+          </nav>
+
+          <p class="footer__copyright">
+            &copy;
+            <span id="copyright-year">2026</span>
+            kanaL Inc.
+          </p>
+
+        </div>
+      </footer>
+  </body>
 </html>
