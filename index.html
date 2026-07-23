@@ -6,6 +6,11 @@
     <meta name="description" content="説明文" />
     <title>タイトル</title>
 
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -19,10 +24,10 @@
     <link rel="stylesheet" href="css/problems.css" />
     <link rel="stylesheet" href="css/strengths.css" />
     <link rel="stylesheet" href="css/features.css" />
-    <link rel="stylesheet" href="css/flow.css" />
-    <link rel="stylesheet" href="css/plan.css" />
     <link rel="stylesheet" href="css/price.css" />
+    <link rel="stylesheet" href="css/flow.css" />
     <link rel="stylesheet" href="css/steps.css" />
+    <link rel="stylesheet" href="css/operation.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/faq.css" />
     <link rel="stylesheet" href="css/cta.css" />
@@ -34,7 +39,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <div class="inner">
         <div class="header__logo">
           <a href="/">
@@ -42,7 +47,10 @@
           </a>
         </div>
         <!-- ハンバーガーメニュー -->
-        <button class="sp-only hamburger" aria-label="メニュー">
+        <button 
+        class="sp-only hamburger" 
+        type="button" 
+        aria-label="メニュー">
           <span></span>
           <span></span>
           <span></span>
@@ -56,7 +64,7 @@
             <li><a href="#faq">よくある質問</a></li>
             <li><a href="#contact">資料請求</a></li>
           </ul>
-          <a href="#contact" class="sp__only cta__button">
+          <a href="#contact" class="sp-only cta__button">
             資料をダウンロードする
           </a>
         </nav>
@@ -69,16 +77,18 @@
         <div class="inner">
           <div class="fv__content">
             <div class="fv__text">
-              <p class="fv__label">中小企業の若手採用に特化</p>
+              <p class="fv__label text-center">中小企業の若手採用に特化</p>
               <h1 class="fv__title">
                 <span class="fv__title-orange">
-                  若手に <br class="sp-only" />選ばれる
+                  若手に <br class="sp-br" />選ばれる
                 </span>
                 <span class="fv__title-bk">中小企業へ</span>
               </h1>
-              <p class="fv__lead">＼ もう、採用で苦労しない。／</p>
-              <p class="fv__message">採用成果にこだわる</p>
+              <div class="fv__subtitle text-center">
+              <p class="fv__lead font-ZenMaru">＼ もう、採用で苦労しない。／</p>
+              <p class="fv__message font-ZenMaru">採用成果にこだわる</p>
               <p class="fv__service">SNS採用代行</p>
+              </div>
             </div>
             <div class="fv__img">
               <img src="images/SP/fv_sp_img.svg" alt="指をさすビジネスマン" />
@@ -86,21 +96,21 @@
           </div>
 
           <!-- sp-only -->
-          <div class="sp-only fv__cta">
+          <div class="sp-only fv__cta text-center">
             <img src="images/SP/cta__catch.svg" alt="まずは無料で" />
-            <a href="#contact" class="sp__only cta__button cta__button-orange">
+            <a href="#contact" class="cta__button cta__button-orange">
               資料をダウンロードする
             </a>
-            <p class="fv__cta-text font-14px">
+            <p class="fv__cta-text">
               採用SNSの支援内容・料金・事例を<br />
               まとめた資料をお送りします。
             </p>
           </div>
-          
+
           <!-- pc-only -->
           <div class="fv__form-wrapper pc-only">
-            <div class="fv__form-heading">
-              <h2 class="fv__form-title">
+            <div class="fv__form-heading text-center">
+              <h2 class="fv__form-title font-ZenMaru">
                 資料請求フォーム
               </h2>
 
@@ -201,7 +211,7 @@
                 >
               </div>
 
-              <p class="fv__form-privacy">
+              <p class="fv__form-privacy text-center">
                 <a
                   class="fv__form-privacy-link"
                   href="https://wakatte.com/privacy"
@@ -233,10 +243,10 @@
               alt="ワカッテ採用"
               class="case-study__logo"
             />
-            <h2 class="case-study__title">の支援実績</h2>
+            <h2 class="case-study__title font-ZenMaru">の支援実績</h2>
           </div>
-          <p class="case-study__text font-15px">
-            求人媒体だけでは届きにくい若手層へ<br class="sp-only" />
+          <p class="case-study__text text-center">
+            求人媒体だけでは届きにくい若手層へ<br class="sp-br" />
             SNSを活用して認知から<br />
             応募・採用までつなげています
           </p>
@@ -246,10 +256,10 @@
             <article class="case-study__card">
               <p class="case-study__tag">放課後デイ</p>
               <div class="case-study__card-body">
-                <p class="case-study__result">
+                <p class="case-study__result text-center">
                   <span class="font-36px">1</span>カ月で<br>
                   <span class="font-36px">19</span>応募・
-                  <div class="cl-orange"><span class="font-36px">6</span>名採用</div>
+                  <span class="cl-orange"><span class="font-36px">6</span>名採用</span>
                 </p>
                 <div class="case-study__image">
                   <img
@@ -264,10 +274,10 @@
             <article class="case-study__card">
               <p class="case-study__tag">焼肉店</p>
               <div class="case-study__card-body">
-                <p class="case-study__result font-24px">
+                <p class="case-study__result text-center">
                   若手応募単価<br>
                   <span class="font-36px">20</span>万円超 →
-                  <div class="cl-orange"><span class="font-36px">3</span>万円未満</div>
+                  <span class="cl-orange"><span class="font-36px">3</span>万円未満</span>
                 </p>
                 <div class="case-study__image">
                   <img
@@ -282,14 +292,14 @@
             <article class="case-study__card">
               <p class="case-study__tag">ネイリスト採用</p>
               <div class="case-study__card-body">
-                <p class="case-study__result font-24px">
+                <p class="case-study__result text-center">
                   <span class="font-36px">1</span>カ月で<br>
                   <span class="font-36px">36</span>応募・
-                  <div class="cl-orange"><span class="font-36px">3</span>名採用</div>
+                  <span class="cl-orange"><span class="font-36px">3</span>名採用</span>
                 </p>
                 <div class="case-study__image">
                   <img
-                    src="images/SP/case-study03.png"
+                    src="images/common/case03.png"
                     alt="ネイリストの採用支援事例"/>
                 </div>
                 <p class="case-study__text font-16px">
@@ -305,7 +315,7 @@
       <section class="problems">
         <div class="inner">
           <div class="problems__visual">
-              <h2 class="problems__title">
+              <h2 class="problems__title font-ZenMaru text-center">
               こんな<span>お悩み</span>ありませんか？
               </h2>
               <div class="problems__item problems__item-1">
@@ -334,7 +344,7 @@
                 src="images/common/problem__image.png"
                 alt="採用について悩んでいる男女"/>
               </div>
-                <p class="problems__text font-16px">
+                <p class="problems__text font-ZenMaru text-center">
                 多くの中小企業が<br />
                 若手採用に行き詰まっています
                 </p>
@@ -345,11 +355,11 @@
       <!--中小企業の魅力 強み -->
       <section class="strengths">
         <div class="inner">
-            <h2 class="strengths__title">
+            <h2 class="strengths__title font-ZenMaru text-center">
               <span class="cl-orange">中小企業の魅力</span>は<br />
               <span class="under-line">求人票だけでは<br />伝わりきりません</span>
             </h2>
-            <p class="strengths__text">
+            <p class="strengths__text text-center">
               若手採用では、給与・休日・福利厚生・<br />
               会社の知名度など条件面で比較されやすくなります
               <br /><br />
@@ -357,16 +367,19 @@
               応募候補から外れてしまうことも少なくありません
             </p>
               <img src="images/common/reason__arrow.svg" alt="理由の矢印">
-              <div class="strengths__message">
-                <p class="font-16px">
-                  だからこそ、<span class="cl-blue font-20px">中小企業の若手採用</span>では
-                  <br><div class="font-20px">会社の<span class="cl-orange font-24px">リアルな魅力</span>を届けることが重要です</div>
+              <div class="strengths__message font-ZenMaru text-center">
+                <p>
+                  だからこそ、<span class="cl-blue">中小企業の若手採用</span>では
+                  <br>会社の<span class="cl-orange">リアルな魅力</span>を届けることが重要です
                 </p>
               </div>
+
               <div class="strengths__cards">
                 <!-- 求人サイトだけの場合 -->
                 <article class="strengths__card strengths__card-1">
-                  <h3 class="strengths__card-label">求人サイトだけの場合</h3>
+                  <h3 class="strengths__card-label text-center">
+                    求人サイトだけの場合
+                  </h3>
                   <div class="strengths__card-img">
                     <img
                       src="images/common/strength1.png"
@@ -391,7 +404,9 @@
 
                 <!-- SNS採用を活用した場合 -->
                 <article class="strengths__card strengths__card-2">
-                  <h3 class="strengths__card-label">SNS採用を活用した場合</h3>
+                  <h3 class="strengths__card-label text-center">
+                    SNS採用を活用した場合
+                  </h3>
                   <div class="strengths__card-img">
                     <img
                       src="images/common/strength2.png"
@@ -414,9 +429,11 @@
                   </ul>
                 </article>
               </div>
-              <p>ワカッテ採用は、TikTok・Instagram・公式LINE・
+              <p class="text-center">
+                ワカッテ採用は、TikTok・Instagram・公式LINE・
               <br>SNS広告を活用し認知・応募・
-              <br>面接・採用につながる発信を支援します</p>              
+              <br>面接・採用につながる発信を支援します
+              </p>              
         </div>
       </section>
 
@@ -424,13 +441,13 @@
       <section class="cta">
         <div class="inner">
           <div class="cta__content">
-            <h2 class="cta__title">
-              若手に選ばれる採用導線を<br class="sp-only">
+            <h2 class="cta__title font-ZenMaru text-center">
+              若手に選ばれる採用導線を<br class="sp-br">
               つくりたい企業様へ
             </h2>
 
-            <p class="cta__text">
-              求人票だけでは伝わらない貴社の魅力を<br class="sp-only">
+            <p class="cta__text text-center">
+              求人票だけでは伝わらない貴社の魅力を<br class="sp-br">
               SNSで届け応募・面接・採用につなげます
             </p>
 
@@ -446,10 +463,11 @@
           </div>
         </div>
       </section>
-<!-- Features -->
-      <section id="features">
+
+      <!-- Features -->
+      <section class="features" id="features">
         <div class="inner">
-          <div class="features__heading">
+          <div class="features__heading text-center">
             <p class="features__sub-title">
               ＼中小企業向けSNS採用代行／
             </p>
@@ -459,7 +477,7 @@
               class="case-study__logo"
               />
             <h2 class="features__title">
-              の<span class="under-line">3つの特徴</span>
+              の<span class="under-line"><strong class="Roboto">3</strong>つの特徴</span>
             </h2>
 
             <p class="features__text">
@@ -474,16 +492,17 @@
               <img src="images/common/Point.01.png" 
               alt="Point01" class="features__card-point" 
               />
-              <h3 class="features__card-title">
-                <span class="cl-blue font-20px">採用成果にこだわる</span><br>
-                SNS運用改善
+              <h3 class="features__card-title font-ZenMaru text-center">
+                <span class="cl-blue font-20px">採用成果にこだわる</span>
+                <br>
+                <span class="font-32px">SNS運用改善</span>
               </h3>
 
               <div class="features__image">
                 <img src="images/common/feature01.png" alt="手を握り合うビジネスマンふたり">
               </div>
 
-              <ul class="features__list">
+              <ul class="features__list font-15px">
                 <li class="features__item">
                   再生数・フォロワー数だけを<span class="cl-orange">追いません</span>
                 </li>
@@ -506,9 +525,12 @@
                 class="features__card-point"
               />
 
-              <h3 class="features__card-title">
-                <span class="cl-blue font-20px">採用担当者の負担を抑える</span><br>
-                月5時間目安で運用
+              <h3 class="features__card-title font-ZenMaru text-center">
+                <span class="cl-blue font-20px">
+                  採用担当者の負担を抑える
+                </span>
+                <br>
+                <span class="font-32px">月5時間目安で運用</span>
               </h3>
 
               <div class="features__image">
@@ -518,7 +540,7 @@
                 />
               </div>
 
-              <ul class="features__list">
+              <ul class="features__list font-15px">
                 <li class="features__item">
                   企画・台本・撮影・編集・投稿・分析まで
                   <span class="cl-orange">代行</span>
@@ -545,9 +567,11 @@
                 class="features__card-point"
               />
 
-              <h3 class="features__card-title">
-                <span class="cl-blue font-20px">届けて、応募後も逃さない</span><br>
-                LINE・広告運用
+              <h3 class="features__card-title font-ZenMaru text-center">
+                <span class="cl-blue font-20px">
+                  届けて、応募後も逃さない</span>
+                  <br>
+                <span class="font-32px">LINE・広告運用</span>
               </h3>
 
               <div class="features__image">
@@ -557,7 +581,7 @@
                 />
               </div>
 
-              <ul class="features__list">
+              <ul class="features__list font-15px">
                 <li class="features__item">
                   SNS広告で
                   <span class="cl-orange">採用ターゲットに届ける</span>
@@ -580,18 +604,19 @@
           </div>
         </div>
       </section>
+
       <!-- 運用代行との違い　STEP -->
       <section class="steps">
         <div class="inner">
-          <div class="steps__heading">
-            <p class="steps__sub-title">一般的な採用SNS</p>
+          <div class="steps__heading text-center">
+            <p class="steps__sub-title font-ZenMaru">一般的な採用SNS</p>
 
-            <h2 class="steps__title">
+            <h2 class="steps__title font-ZenMaru">
               <span class="cl-orange">運用代行との違い</span>
             </h2>
 
             <p class="steps__lead">
-              <span class="under-line">ワカッテ採用は、「SNS運用代行」ではなく<br class="sp-only">
+              <span class="under-line">ワカッテ採用は、「SNS運用代行」ではなく<br class="sp-br">
               「SNS採用代行」です</span>
             </p>
           </div>
@@ -614,8 +639,8 @@
 
             <!-- ステップカード -->
             <div class="steps__items">
-              <article class="steps__item steps__item-gray">
-                <p class="steps__item-number">01</p>
+              <article class="steps__item steps__item-gray text-center">
+                <p class="steps__item-number Roboto">01</p>
 
                 <h3 class="steps__item-title">認知を広げる</h3>
 
@@ -632,8 +657,8 @@
                 </p>
               </article>
 
-              <article class="steps__item steps__item-gray">
-                <p class="steps__item-number">02</p>
+              <article class="steps__item steps__item-gray text-center">
+                <p class="steps__item-number Roboto">02</p>
 
                 <h3 class="steps__item-title">興味・理解を深める</h3>
 
@@ -650,8 +675,8 @@
                 </p>
               </article>
 
-              <article class="steps__item steps__item-blue">
-                <p class="steps__item-number">03</p>
+              <article class="steps__item steps__item-blue text-center">
+                <p class="steps__item-number Roboto">03</p>
 
                 <h3 class="steps__item-title">応募につなげる</h3>
 
@@ -668,8 +693,8 @@
                 </p>
               </article>
 
-              <article class="steps__item steps__item-blue">
-                <p class="steps__item-number">04</p>
+              <article class="steps__item steps__item-blue text-center">
+                <p class="steps__item-number Roboto">04</p>
 
                 <h3 class="steps__item-title">面接辞退を防ぐ</h3>
 
@@ -686,8 +711,8 @@
                 </p>
               </article>
 
-              <article class="steps__item steps__item-blue">
-                <p class="steps__item-number">05</p>
+              <article class="steps__item steps__item-blue text-center">
+                <p class="steps__item-number Roboto">05</p>
 
                 <h3 class="steps__item-title">採用につなげる</h3>
 
@@ -706,8 +731,8 @@
             </div>
           </div>
 
-          <p class="steps__note">
-            ※広告運用・公式LINE・応募後フォローは<br class="sp-only">
+          <p class="steps__note text-center">
+            ※広告運用・公式LINE・応募後フォローは<br class="sp-br">
             プランにより対応範囲が異なります。
           </p>
         </div>
@@ -716,8 +741,8 @@
       <!-- 導入後の運用イメージ -->
       <section class="operation">
         <div class="inner">
-          <div class="operation__heading">
-            <h2 class="operation__title">
+          <div class="operation__heading text-center">
+            <h2 class="operation__title font-ZenMaru">
               導入後の運用イメージ
             </h2>
 
@@ -731,14 +756,16 @@
           <div class="operation__cards">
             <!-- 1か月目 -->
             <article class="operation__card">
-              <h3 class="operation__card-month">1か月目</h3>
+              <h3 class="operation__card-month font-ZenMaru text-center">
+                <span>1</span>か月目
+              </h3>
 
               <div class="operation__card-item">
-                <p class="operation__card-item-label">
+                <p class="operation__card-item-label text-center">
                   <span class="cl-blue font-20px">ワカッテ採用</span>が対応すること
                 </p>
 
-                <ul class="operation__card-item-list">
+                <ul class="operation__card-item-list font-15px">
                   <li>
                     初期戦略の設計
                   </li>
@@ -761,15 +788,16 @@
               </div>
 
               <div class="operation__card-item-box">
-                <p>
-                  <span class="cl-orange font-20px">貴社</span>にご対応いただくこと
+                <p class="text-center">
+                  <span class="cl-orange font-20px">貴社</span>
+                  にご対応いただくこと
                 </p>
 
-                <p class="operation__time">
+                <p class="operation__time text-center">
                   工数：10〜15時間
                 </p>
 
-                <ul class="operation__box-list">
+                <ul class="operation__box-list font-15px">
                   <li>
                     インタビュー協力
                   </li>
@@ -788,14 +816,17 @@
 
 <!-- 2か月目 -->
             <article class="operation__card">
-              <h3 class="operation__card-month">2か月目</h3>
+              <h3 class="operation__card-month font-ZenMaru text-center">
+                <span>2</span>か月目
+              </h3>
 
               <div class="operation__card-item">
-                <p class="operation__card-item-label">
-                  <span class="cl-blue font-20px">ワカッテ採用</span>が対応すること
+                <p class="operation__card-item-label text-center">
+                  <span class="cl-blue font-20px">ワカッテ採用</span>
+                  が対応すること
                 </p>
 
-                <ul class="operation__card-item-list">
+                <ul class="operation__card-item-list font-15px">
                   <li>投稿開始</li>
                   <li>追加投稿企画の作成</li>
                   <li>公式LINE運用の構築</li>
@@ -806,15 +837,16 @@
               </div>
 
               <div class="operation__card-item-box">
-                <p>
-                  <span class="cl-orange font-20px">貴社</span>にご対応いただくこと
+                <p class="text-center">
+                  <span class="cl-orange font-20px">貴社</span>
+                  にご対応いただくこと
                 </p>
 
-                <p class="operation__time">
+                <p class="operation__time text-center">
                   工数：10〜15時間
                 </p>
 
-                <ul class="operation__box-list">
+                <ul class="operation__box-list font-15px">
                   <li>撮影協力</li>
                   <li>企画・台本・動画確認</li>
                   <li>定例打ち合わせ参加</li>
@@ -824,14 +856,17 @@
 
 <!-- 3か月目以降 -->
             <article class="operation__card">
-              <h3 class="operation__card-month">3か月目〜</h3>
+              <h3 class="operation__card-month font-ZenMaru text-center">
+                <span>3</span>か月目〜
+              </h3>
 
               <div class="operation__card-item">
-                <p class="operation__card-item-label">
-                  <span class="cl-blue font-20px">ワカッテ採用</span>が対応すること
+                <p class="operation__card-item-label text-center">
+                  <span class="cl-blue font-20px">ワカッテ採用</span>
+                  が対応すること
                 </p>
 
-                <ul class="operation__card-item-list">
+                <ul class="operation__card-item-list font-15px">
                   <li>月次レポート作成</li>
                   <li>投稿企画・台本作成</li>
                   <li>撮影・編集・投稿管理</li>
@@ -842,15 +877,16 @@
               </div>
 
               <div class="operation__card-item-box">
-                <p>
-                  <span class="cl-orange font-20px">貴社</span>にご対応いただくこと
+                <p class="text-center">
+                  <span class="cl-orange font-20px">貴社</span>
+                  にご対応いただくこと
                 </p>
 
-                <p class="operation__time">
+                <p class="operation__time text-center">
                   工数：5〜7時間
                 </p>
 
-                <ul class="operation__box-list">
+                <ul class="operation__box-list font-15px">
                   <li>月1回の打ち合わせ</li>
                   <li>撮影協力</li>
                   <li>企画・台本・動画確認</li>
@@ -864,15 +900,15 @@
             <!-- CTA -->
       <section class="cta">
         <div class="inner">
-          <div class="cta__content">
-            <h2 class="cta__title">
-              SNSから応募・面接・採用まで<br class="sp-only">
+          <div class="cta__content text-center">
+            <h2 class="cta__title font-ZenMaru">
+              SNSから応募・面接・採用まで<br class="sp-br">
               つなげたい企業様へ
             </h2>
 
             <p class="cta__text">
               貴社の採用課題に合わせて<br>
-              SNS・広告・公式LINEを活用した<br class="sp-only">
+              SNS・広告・公式LINEを活用した<br class="sp-br">
               採用導線をご提案します
             </p>
 
@@ -891,8 +927,8 @@
       <!-- Price -->
       <section class="price" id="price">
         <div class="inner">
-          <div class="price__heading">
-            <h2 class="section-heading price__title">
+          <div class="price__heading text-center">
+            <h2 class="section-heading price__title font-ZenMaru">
               料金・プラン比較表
             </h2>
 
@@ -903,23 +939,23 @@
           </div>
 
           <div class="price__table-wrapper">
-            <table class="price__table">
+            <table class="price__table text-center">
               <thead>
                 <tr>
                   <th class="price__blank"></th>
 
                   <th class="price__plan">
-                    SNS運用<br class="sp-only">
+                    SNS運用<br class="sp-br">
                     代行プラン
                   </th>
 
                   <th class="price__plan">
-                    広告運用<br class="sp-only">
+                    広告運用<br class="sp-br">
                     プラン
                   </th>
 
                   <th class="price__plan price__plan-orange">
-                    採用獲得<br class="sp-only">
+                    採用獲得<br class="sp-br">
                     支援プラン
                   </th>
                 </tr>
@@ -963,7 +999,7 @@
 
                 <tr class="td-orange">
                   <th class="price__category font-bold">
-                    おすすめ<br>
+                    おすすめ<br class="sp-br">
                     企業
                   </th>
 
@@ -985,7 +1021,7 @@
 
                 <tr>
                   <th class="price__category">
-                    初期戦略<br class="sp-only">
+                    初期戦略<br class="sp-br">
                     設計
                   </th>
 
@@ -1004,7 +1040,7 @@
 
                 <tr class="td-orange">
                   <th class="price__category">
-                    企画・<br class="sp-only">
+                    企画・<br class="sp-br">
                     台本作成
                   </th>
 
@@ -1060,7 +1096,7 @@
 
                 <tr>
                   <th class="price__category">
-                    SNS<br class="sp-only">
+                    SNS<br class="sp-br">
                     広告運用
                   </th>
 
@@ -1079,7 +1115,7 @@
 
                 <tr class="td-orange">
                   <th class="price__category">
-                    公式LINE<br class="sp-only">
+                    公式LINE<br class="sp-br">
                     運用
                   </th>
 
@@ -1098,7 +1134,7 @@
 
                 <tr>
                   <th class="price__category">
-                    採用獲得<br class="sp-only">
+                    採用獲得<br class="sp-br">
                     代行
                   </th>
 
@@ -1128,8 +1164,8 @@
       <!-- 　流れ　flow -->
       <section class="flow">
         <div class="inner">
-          <div class="flow__heading">
-            <h2 class="section-heading flow__title">
+          <div class="flow__heading text-center">
+            <h2 class="section-heading flow__title font-ZenMaru">
               ご利用の流れ
             </h2>
           </div>
@@ -1137,13 +1173,14 @@
           <div class="flow__items">
             <!-- step 01 -->
             <article class="flow__item">
-              <div class="flow__number">
-                <span>step</span>
+              <div class="flow__number text-center Roboto">
+                <p>step
                 <strong>01</strong>
+                </p>
               </div>
 
               <div class="flow__content">
-                <h3 class="flow__item-title">
+                <h3 class="flow__item-title text-center">
                   お問い合わせ
                 </h3>
 
@@ -1163,13 +1200,14 @@
 
             <!-- step 02 -->
             <article class="flow__item">
-              <div class="flow__number">
-                <span>step</span>
+              <div class="flow__number text-center Roboto">
+                <p>step
                 <strong>02</strong>
+                </p>
               </div>
 
               <div class="flow__content">
-                <h3 class="flow__item-title">
+                <h3 class="flow__item-title text-center">
                   お申し込み
                 </h3>
 
@@ -1191,13 +1229,14 @@
 
             <!-- step 03 -->
             <article class="flow__item">
-              <div class="flow__number">
-                <span>step</span>
+              <div class="flow__number text-center Roboto">
+                <p>step
                 <strong>03</strong>
+                </p>
               </div>
 
               <div class="flow__content">
-                <h3 class="flow__item-title">
+                <h3 class="flow__item-title text-center">
                   戦略設計・コンセプト作成
                 </h3>
 
@@ -1214,13 +1253,14 @@
 
             <!-- step 04 -->
             <article class="flow__item">
-              <div class="flow__number">
-                <span>step</span>
-                <strong>04</strong>
+              <div class="flow__number text-center Roboto">
+                <p>step
+                  <strong>04</strong>
+                </p>
               </div>
 
               <div class="flow__content">
-                <h3 class="flow__item-title">
+                <h3 class="flow__item-title text-center">
                   施策の実行・数値データの分析
                 </h3>
 
@@ -1241,13 +1281,14 @@
 
             <!-- step 05 -->
             <article class="flow__item">
-              <div class="flow__number">
-                <span>step</span>
-                <strong>05</strong>
+              <div class="flow__number text-center Roboto">
+                <p>step
+                  <strong>05</strong>
+                </p>
               </div>
 
               <div class="flow__content">
-                <h3 class="flow__item-title">
+                <h3 class="flow__item-title text-center">
                   レポーティング・改善提案
                 </h3>
 
@@ -1274,8 +1315,8 @@
         <div class="inner">
 
           <div class="contact__box">
-            <div class="contact__heading">
-            <h2 class="contact__title">
+            <div class="contact__heading text-center">
+            <h2 class="contact__title font-ZenMaru">
               資料請求フォーム
             </h2>
 
@@ -1411,8 +1452,8 @@
       <section class="faq" id="faq">
         <div class="inner">
 
-          <div class="faq__heading">
-            <h2 class="section-heading faq__title">
+          <div class="faq__heading text-center">
+            <h2 class="section-heading faq__title font-ZenMaru">
               よくある質問
             </h2>
 
@@ -1431,7 +1472,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   ワカッテ採用はSNS運用代行と何が違いますか？
@@ -1467,7 +1508,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   ワカッテ採用では何を支援してもらえますか？
@@ -1500,7 +1541,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   ワカッテ採用の料金はいくらですか？
@@ -1534,7 +1575,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   最低契約期間はありますか？
@@ -1569,7 +1610,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   どんな企業に向いていますか？
@@ -1609,7 +1650,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   向いていない企業はありますか？
@@ -1646,7 +1687,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   採用を保証していますか？
@@ -1680,7 +1721,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   自社側では毎月どんな作業が必要ですか？
@@ -1718,7 +1759,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   公式LINEやSNS広告は必須ですか？
@@ -1755,7 +1796,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   どれくらいで成果が出ますか？
@@ -1789,7 +1830,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   出演者が自社内にいない場合はどうすればいいですか？
@@ -1826,7 +1867,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                <span class="faq__question-mark">Q</span>
+                <span class="faq__question-mark Roboto">Q</span>
 
                 <span class="faq__question-text">
                   追加費用は必要ですか？
@@ -1860,13 +1901,13 @@
             <!-- CTA -->
       <section class="cta">
         <div class="inner">
-          <div class="cta__content">
-            <h2 class="cta__title">
+          <div class="cta__content text-center">
+            <h2 class="cta__title font-ZenMaru">
               若手採用に悩んでいる企業様へ
             </h2>
 
             <p class="cta__text">
-              まずは無料相談で、貴社の採用課題や<br class="sp-only">
+              まずは無料相談で、貴社の採用課題や<br class="sp-br">
               SNS活用の進め方を整理しませんか？
             </p>
 
