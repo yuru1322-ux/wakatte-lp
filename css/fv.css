@@ -59,17 +59,19 @@
 /* SPのみ　fv CTA */
 .fv__cta{
   background-color: #379FAA;
-  padding-top: 70px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 .fv__cta img{
-  position: absolute;
-  left: 25%;
-  top: 605px;
-  z-index: 10;
+  display:block;
+  margin-top: -60px;
+  margin-bottom: 12px;
+  position:relative;
+  z-index:2;
 }
 .fv__cta-text{
   margin-top: 40px;
   color: #fff;
+  font-size: 14px;
 }
 

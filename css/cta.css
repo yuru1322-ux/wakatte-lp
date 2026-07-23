@@ -1,4 +1,5 @@
 .cta__button-orange{
+  display: inline-block;
   background-color: #FB8B18;
   color: #fff;
   padding-inline: 18px;
@@ -7,9 +8,10 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 .cta__button-orange::after{
   content: url("../images/common/icon-download.svg");
-  margin-left: 16px;
+  margin-left: 10px;
   flex-shrink: 0;
 }

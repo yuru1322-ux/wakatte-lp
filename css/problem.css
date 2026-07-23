@@ -1,0 +1,69 @@
+.problems {
+  background-image: url(../images/SP/problem_sp_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 920px;
+}
+.problems__visual {
+  position: relative;
+  margin-top: 60px;
+  padding-top: 50px;
+}
+.problems__title{
+  font-size: 24px;
+}
+.problems__title span {
+  text-emphasis: filled dot;
+  -webkit-text-emphasis: filled dot;
+  font-size: 30px;
+}
+.problems__item{
+position: relative;
+background-color: #fff; 
+border-radius: 999px;
+margin-block: 20px;
+padding-block: 30px;
+width: 85%;
+}
+.problems__item-text{
+  margin-inline: 35px;
+
+}
+.problems__item::after{
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  width: 30px;
+  height: 30px;
+}
+.problems__item-1::after{
+  background: url("../images/common/problem__bubble--center__after.svg")
+              center / contain no-repeat;
+  left:50%
+}
+.problems__item-2::after{
+  background: url("../images/common/problem__bubble--left_after.svg")
+              center / contain no-repeat;
+  left:40%
+}
+.problems__item-3::after{
+  background: url("../images/common/problem__bubble--right__after.svg")
+              center / contain no-repeat;
+  left:60%
+}
+.problems__item-1{
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.problems__item-2{
+  margin-left: 0px;
+  margin-top: 50px;
+}
+.problems__item-3{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.problems__text{
+  margin-top: 20px;
+}
