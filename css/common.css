@@ -1,7 +1,6 @@
 /* 
 button
 section-title
-アンダーライン
 pc-only
 sp-only
 共通アニメーション
@@ -11,7 +10,12 @@ sp-only
 body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
-  color: #000;
+  color: #333;
+}
+.wrapper{
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto; 
 }
 a {
   color: inherit;
@@ -20,7 +24,7 @@ a {
 .inner {
   width: 100%;
   max-width: 1080px;
-  margin-inline: auto;
+  margin-inline: auto; 
   padding-inline: 20px;
 }
 img {
@@ -80,4 +84,41 @@ img {
 
 .cl-blue {
   color: #379faa;
+}
+/* セクションタイトル */
+.section-heading{
+  position: relative;
+  margin-top: 60px;
+}
+.section-heading::before{
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 2px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #E5F4F5;
+
+  white-space: nowrap;
+
+  z-index: -1;
+}
+
+/* アンダーライン */
+.under-line {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.under-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  width: 100%;
+  height: 0.35em;
+  background: #FFFF66;
+  z-index: -1;
 }

@@ -1,0 +1,75 @@
+.fv{
+  position: relative;
+  background-color: #E5F4F5;
+  z-index: 1;
+}
+
+.fv__label{
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding-inline: 32px;
+  padding-block: 8px;
+  background-color: #fff;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.fv__copy{
+  margin-top: 16px;
+  padding-left: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+.fv__title{
+  font-size: 48px;
+}
+.fv__title-1{
+  font-size: 64px;
+}
+.fv__img{
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+/* サブコピー */
+.fv__subcopy{
+  margin-top: 40px;
+  line-height: 2;
+  padding-bottom: 56px;
+}
+.fv__lead{
+  font-weight: 400;
+}
+.fv__message{
+  font-weight: 700;
+  font-size: 24px;
+}
+.fv__service{
+  display: inline-block;
+  background-color: #379FAA;
+  color:#fff;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  padding-inline: 32px;
+  padding-block: 16px;
+  border-radius: 30px 0;
+}
+/* SPのみ　fv CTA */
+.fv__cta{
+  background-color: #379FAA;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.fv__cta img{
+  position: absolute;
+  left: 25%;
+  top: 605px;
+  z-index: 10;
+}
+.fv__cta-text{
+  margin-top: 40px;
+  color: #fff;
+}
+

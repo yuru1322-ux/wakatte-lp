@@ -38,9 +38,10 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
+    <div class="wrapper">
     <!-- Header -->
     <header class="header">
-      <div class="inner">
+        <div class="header__menus">
         <div class="header__logo">
           <a href="/">
             <img src="images/common/logo.svg" alt="ワカッテ採用" />
@@ -68,31 +69,34 @@
             資料をダウンロードする
           </a>
         </nav>
-      </div>
+        </div>
     </header>
     <main>
 
       <!-- ファーストビュー -->
       <section class="fv">
-        <div class="inner">
           <div class="fv__content">
-            <div class="fv__text">
+              <div class="text-center">
               <p class="fv__label text-center">中小企業の若手採用に特化</p>
+              </div>
+              <div class="fv__copy">
               <h1 class="fv__title">
-                <span class="fv__title-orange">
+                <span class="cl-orange fv__title-1">
                   若手に <br class="sp-br" />選ばれる
                 </span>
-                <span class="fv__title-bk">中小企業へ</span>
+                <br>中小企業へ</span>
               </h1>
-              <div class="fv__subtitle text-center">
-              <p class="fv__lead font-ZenMaru">＼ もう、採用で苦労しない。／</p>
+              <div class="fv__img">
+              <img src="images/SP/fv_sp_img.svg" alt="指をさすビジネスマン" />
+              </div>
+              </div>
+              <div class="fv__subcopy text-center">
+              <p class="fv__lead font-ZenMaru"> \ もう、採用で苦労しない。/</p>
               <p class="fv__message font-ZenMaru">採用成果にこだわる</p>
               <p class="fv__service">SNS採用代行</p>
               </div>
             </div>
-            <div class="fv__img">
-              <img src="images/SP/fv_sp_img.svg" alt="指をさすビジネスマン" />
-            </div>
+            
           </div>
 
           <!-- sp-only -->
@@ -231,7 +235,6 @@
               </button>
             </form>
           </div>
-        </div>
       </section>
 
       <!-- ケーススタディ -->
@@ -243,7 +246,9 @@
               alt="ワカッテ採用"
               class="case-study__logo"
             />
-            <h2 class="case-study__title font-ZenMaru">の支援実績</h2>
+            <h2 class="case-study__title cl-blue font-ZenMaru">
+              <span>の</span>支援実績
+            </h2>
           </div>
           <p class="case-study__text text-center">
             求人媒体だけでは届きにくい若手層へ<br class="sp-br" />
@@ -357,7 +362,7 @@
         <div class="inner">
             <h2 class="strengths__title font-ZenMaru text-center">
               <span class="cl-orange">中小企業の魅力</span>は<br />
-              <span class="under-line">求人票だけでは<br />伝わりきりません</span>
+              <span class="under-line">求人票だけでは</span><br class="sp-br"/><span class="under-line">伝わりきりません</span>
             </h2>
             <p class="strengths__text text-center">
               若手採用では、給与・休日・福利厚生・<br />
@@ -615,9 +620,9 @@
               <span class="cl-orange">運用代行との違い</span>
             </h2>
 
-            <p class="steps__lead">
-              <span class="under-line">ワカッテ採用は、「SNS運用代行」ではなく<br class="sp-br">
-              「SNS採用代行」です</span>
+            <p class="steps__lead">ワカッテ採用は、
+              <span class="under-line">「SNS運用代行」ではなく</span><br class="sp-br">
+              <span class="under-line">「SNS採用代行」です</span>
             </p>
           </div>
 
@@ -1956,5 +1961,6 @@
 
         </div>
       </footer>
-  </body>
+  </div>
+</body>
 </html>

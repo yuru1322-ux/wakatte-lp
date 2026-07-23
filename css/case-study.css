@@ -1,0 +1,19 @@
+.case-study__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.case-study__heading::before{
+  content: "CASE STUDY";
+}
+.case-study__logo{
+  margin: 0;
+  width: 180px;
+}
+.case-study__title {
+  font-size: 32px;
+}
+.case-study__title span{
+  font-size: 24px;
+}
