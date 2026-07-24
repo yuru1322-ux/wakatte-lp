@@ -1,0 +1,147 @@
+.steps{
+  background-color: #E5F4F5;
+}
+.steps__heading{
+  padding-top: 40px;
+}
+
+.steps__title{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+}
+.steps__title .cl-orange{
+  font-size: 32px;
+  font-weight: 700;
+}
+.steps__title strong{
+  margin-left: -5px;
+  position: relative;
+}
+.steps__title strong::before{
+  content: "・・";
+  position: absolute;
+  left: 60%;
+  top: -0.7em; 
+  transform: translateX(-50%);
+  letter-spacing: 1.1em; 
+  font-size: 14px;
+}
+.steps__lead{
+  margin-top: 20px;
+}
+.steps__lead strong{
+  font-weight: 700;
+}
+/* カード */
+.steps__items{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  order: 2;
+}
+.steps__item-number {
+  display: block;
+  width: fit-content;
+  margin: -25px auto;
+  font-size: 24px;
+  padding: 10px;
+  background: #909090;
+  color: #fff;
+  border-radius: 999px;
+}
+.steps__item{
+  border: 2px solid #909090;
+  background-color: #fff;
+  height: 231px;
+  width: 200px;
+}
+.steps__item-title{
+  margin-top: 30px;
+}
+.steps__item-image{
+  margin-top: 16px;
+}
+.steps__item-text{
+  margin-top: 16px;
+  font-size: 14px;
+}
+.steps__item-text .cl-orange{
+  font-weight: 700;
+}
+.steps__item-blue .steps__item-number{
+  background-color: #379FAA;
+}
+.steps__item-blue{
+  border: 2px solid #379FAA;
+}
+/* 帯 */
+.steps__blue{
+  display: block;
+  position: relative;
+  background-color: #379FAA;
+  color: #fff;
+  writing-mode: vertical-rl;
+  padding-block: 7.5px;
+  padding-top: 70px;
+  height: 1260px;
+  order: 1;
+}
+.steps__blue::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+
+  width: 100%;
+  height: 25px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #379FAA;
+}
+.steps__gray{
+  display: block;
+  position: relative;
+  background-color: #909090;
+  color: #fff;
+  writing-mode: vertical-rl;
+  padding-block: 8.5px;
+  padding-top: 70px;
+  height: 473px;
+  order: 3;
+}
+.steps__gray::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+
+  width: 100%;
+  height: 20px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #909090;
+}
+.steps__blue-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+.steps__blue-text{
+  font-size: 20px;
+  font-weight: 500;
+}
+/*　配置　 */
+.steps__body{
+  display: flex;
+  gap: 22.5px;
+  margin-top: 43px;
+}
+/* 下のコメント */
+.steps__note{
+  font-size: 12px;
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
