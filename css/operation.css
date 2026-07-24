@@ -1,0 +1,120 @@
+.operation{
+  margin-block: 60px;
+}
+.operation__title{
+  font-size: 32px;
+  font-weight: 700;
+}
+.operation__text{
+  margin-top: 20px;
+  line-height: 1.5;
+}
+/* カード */
+.operation__cards{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.operation__card{
+  background-color: #F3FFFF;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  border-radius:10px;
+  position: relative;
+}
+.operation__card-month{
+  display: block;
+  width: fit-content;
+  margin: 32px auto 0;
+  padding-inline: 104px;
+  padding-block: 3px;
+  background-color: #379FAA;
+  color:#fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.operation__card-month span{
+  font-size: 32px;
+  font-weight: 700;
+}
+.operation__card-item-label{
+  display: block;
+  width: fit-content;
+  margin: 18px auto 0;
+  padding: 4px 20px;
+  background-color: #fff;
+  border: 1px solid #379FAA;
+  border-radius: 10px 0;
+  letter-spacing: 1.5;
+}
+.operation__card-item-label span{
+  font-size: 20px;
+  font-weight: 700;
+}
+.operation__card-item-list{
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 35px;
+  line-height: 2;
+}
+.operation__card-item-list li{
+  position: relative;
+  padding-left: 25px;
+}
+.operation__card-item-list li::after{
+  content: "";
+  position: absolute;
+  left: 0.1em;
+  top: 0.7em;
+
+  background-image: url("../images/common/VectorV-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 15px;
+  height: 12px;
+}
+.operation__card-item-box{
+  background-color: #FFFBF8;
+  border: 1px solid #FB8B18;
+  border-radius:10px;
+  margin-inline: 30px;
+  margin-top: 18px;
+  margin-bottom: 32px;
+  padding: 10px 0 20px 0;
+}
+.operation__time{
+  display: block;
+  width: fit-content;
+  margin: 8px auto 0;
+  padding: 4px 20px;
+  background-color: #fff;
+  border: 1px solid #FB8B18;
+  border-radius: 999px;
+  color: #FB8B18;
+}
+.operation__box-list{
+  padding-left: 70px;
+  margin-top: 24px;
+}
+.operation__box-list li::marker{
+  color: #FB8B18;
+}
+/* SP オンリー矢印 */
+.operation__card::after{
+  content: "";
+  position: absolute;
+    left: 50%;
+  bottom: -65px;
+  transform: translateX(-50%);
+
+  width: 20px;
+  height: 50px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #379FAA;
+}
+.operation__card:last-child::after{
+  display: none;
+}
