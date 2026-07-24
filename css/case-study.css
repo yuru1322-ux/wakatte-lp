@@ -60,7 +60,6 @@
 .case-study__image{
   display:block;
   margin:20px auto -30px;
-  position:relative;
   z-index:2;
 }
 .case-study__text{

@@ -1,0 +1,118 @@
+.strengths {
+  margin-top: 20px;
+}
+.strengths__title .cl-orange {
+  font-size: 32px;
+}
+.strengths__text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.strengths__arrow {
+  margin-top: 20px;
+}
+.strengths__message {
+  margin-top: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.strengths__message::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -5px;
+
+  width: 19px;
+  height: 19px;
+
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+}
+.strengths__message::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 19px;
+  height: 19px;
+
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+}
+/* カード */
+.strengths__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 52px;
+}
+.strengths__card {
+  border: 2px solid #c5c5c5;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+}
+.strengths__card-label {
+  display: block;
+  width: fit-content;
+  margin: -25px auto;
+  font-size: 16px;
+  padding: 10px 24px;
+  background: #999;
+  color: #fff;
+  border-radius: 999px;
+}
+.strengths__card-img {
+  margin-top: 62px;
+}
+.strengths__card-list {
+  line-height: 2;
+  margin-block: 40px;
+  list-style: none;
+}
+.strengths__card-list li {
+  position: relative;
+  padding-left: 32px;
+}
+.list-x {
+  margin-left: 40px;
+}
+.list-x::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../images/common/VectorX.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.strengths__card-2 {
+  border: 2px solid rgb(55, 159, 170);
+  box-shadow: 3px 3px 5px rgba(55, 159, 170, 0.15);
+}
+.strengths__card-2 .strengths__card-label {
+  background-color: #379faa;
+  border-radius: 15px 0;
+}
+.list-v{
+  color: #379faa;
+}
+.list-v::before {
+  content: "";
+  position: absolute;
+  left: 0.8em;
+  top: 0.7em;
+
+  background-image: url("../images/common/VectorV-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 15px;
+  height: 11px;
+}
+.strengths__note{
+  margin-top: 40px;
+  margin-bottom: 60px;
+}

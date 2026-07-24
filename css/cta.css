@@ -3,7 +3,8 @@
   background-color: #FB8B18;
   color: #fff;
   padding-inline: 18px;
-  padding-block: 24px;
+  padding-bottom: 24px;
+  padding-top: 18px;
   border-radius: 10px;
   font-size: 24px;
   font-weight: 700;
@@ -14,4 +15,7 @@
   content: url("../images/common/icon-download.svg");
   margin-left: 10px;
   flex-shrink: 0;
+}
+.cta__button{
+  font-size: 18px;
 }
