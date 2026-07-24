@@ -1,0 +1,157 @@
+.price__title::before{
+  content: "PRICE";
+  font-size: 64px;
+  top: -38px;
+}
+.price__text{
+  margin-top: 20px;
+}
+.price__table-wrapper{
+  margin-top: 34px;
+}
+/* 上の表題 */
+.price__plan{
+  background-color: #379FAA;
+  border-radius: 10px 10px 0  0;
+  color: #fff;
+  font-size: 15px;
+  padding-block: 9px;
+  line-height: 1.5;
+  height: 64px;
+  width: 92px;
+}
+.price__plan-orange{
+  background-color: #FB8B18;
+  border-radius: 0;
+  position: relative;
+}
+.price__plan-orange::after{
+  content: "";
+  position: absolute;
+  background-color: #FB8B18;
+  height: 10px;
+  width: 100%;
+  left: 0;
+  top: -10px;
+  border-radius: 10px 10px 0  0;
+}
+.price__plan-orange::before{
+  content: "";
+  position: absolute;
+  background: url(../images/common/recommend.svg)
+  center / contain no-repeat;
+  top: -28px;
+  left: 4px;
+  width: 83px;
+  height: 34px;
+  z-index: 2;
+}
+
+/* 左の表題 */
+.price__category{
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 400;
+  width: 86px;
+}
+.price__category div{
+  background-color: #E5F4F5;
+  display: inline-block;
+  position: relative;
+  height: 48px;
+  margin-left: -15px;
+}
+.category-bold{
+  font-weight: 700;
+}
+.category-bold div{
+  height: 64px;
+  width: 76px;
+  padding-top: 8px;
+}
+.price__category01 div{
+  padding: 19px 8px;
+}
+.category-else{
+  height: 48px;
+  width: 76px;
+  font-size: 13px;
+  padding-top: 6px;
+}
+.category-bold div::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 20px;
+  height: 100%;
+  border-left: 12px solid #E5F4F5;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.category-else::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 20px;
+  height: 100%;
+  border-left: 12px solid #E5F4F5;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+/* 中身 */
+.price__cell{
+  font-size: 12px;
+}
+.td-orange td{
+  background-color: #FFFBF8;
+}
+/* border */
+
+.price__cell{
+  border-left: 2px solid #379FAA;
+}
+.price__cell-orange{
+  border-left: 2px solid #FB8B18;
+  border-right: 2px solid #FB8B18;
+}
+.last-blue{
+  border-bottom: 2px solid #379FAA;
+}
+.last-orange{
+    border-bottom: 2px solid #FB8B18;
+}
+.price__table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+tr td{
+  height: 52px;
+}
+.hi-90px{
+  height: 90px;
+}
+.hi-74px{
+  height: 74px;
+}
+/* ○ */
+.price__circle{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+.price__circle-orange{
+  border: 2px solid #FB8B18;
+}
+/* 終わりのテキスト */
+.price__notes{
+  font-size: 12px;
+  margin: 20px 0 0 20px;
+}
+.price{
+  margin-bottom: 60px;
+}
