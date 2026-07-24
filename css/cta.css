@@ -1,8 +1,9 @@
+/* ボタン */
 .cta__button-orange{
   display: inline-block;
   background-color: #FB8B18;
   color: #fff;
-  padding-inline: 18px;
+  padding-inline: 16px;
   padding-bottom: 24px;
   padding-top: 18px;
   border-radius: 10px;
@@ -13,9 +14,49 @@
 }
 .cta__button-orange::after{
   content: url("../images/common/icon-download.svg");
-  margin-left: 10px;
+  margin-left: 6px;
   flex-shrink: 0;
+}
+
+.cta__button-white{
+  display: inline-block;
+  background-color: #fff;
+  color: #FB8B18;
+  border:2px solid #FB8B18;
+  padding-inline: 18px;
+  padding-bottom: 24px;
+  padding-top: 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.cta__button-white::after{
+  content: url("../images/common/icon-mail.svg");
+  margin-left: 6px;
+  flex-shrink: 0;
+}
+.cta__buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-inline: 10px;
 }
 .cta__button{
   font-size: 18px;
+}
+/* セクション */
+.cta{
+  background-color: #379FAA;
+  padding-block: 40px;
+}
+.cta__content{
+  background-color: #fff;
+  padding-block: 40px;
+}
+.cta__title{
+  font-weight: 500;
+}
+.cta__text{
+  margin-block: 24px;
 }
